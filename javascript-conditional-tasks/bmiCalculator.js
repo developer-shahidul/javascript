@@ -26,12 +26,12 @@ console.log(bmi);
 //   console.log("YOU ARE OBESE");
 // }
 
-const status =
-  bmi < 18.5
-    ? "YOU ARE UNDERWEIGHT"
-    : bmi >= 18.5 && bmi <= 24.9
-    ? "YOU ARE NORMAL"
-    : bmi >= 25 && bmi <= 29.99
-    ? "YOU ARE OVERWEIGHT"
-    : "YOU ARE OBESE";
-console.log(status)
+const status = 0;  
+bmi < 18.5
+  ? "YOU ARE UNDERWEIGHT"
+  : bmi >= 18.5 && bmi <= 24.9
+  ? "YOU ARE NORMAL"
+  : bmi >= 25 && bmi <= 29.99
+  ? "YOU ARE OVERWEIGHT"
+  : "YOU ARE OBESE";
+console.log(status);
