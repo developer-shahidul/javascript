@@ -71,8 +71,8 @@ var numbers = ["Tom", "Tim", "Tin", "Tik"];
 for (let number of numbers) {
   result = result.concat(number);
 }
-console.log(result);
-// **Output:**
+// console.log(result);
+// // **Output:**
 
 // `'TomTimTinTik'`
 
@@ -83,12 +83,26 @@ console.log(result);
 // Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
 
 // **Input:**
+//1
+
 const statement = "I am a hard working person";
+const words = statement.split(" "); // শব্দগুলো আলাদা করলাম
 let statement_rev = "";
-for (let i = statement.length - 1; i >= 0; i--) {
-  statement_rev += statement[i];
+for (let i = words.length - 1; i >= 0; i--) {
+  // words.length → ঠিক, কারণ এটা শব্দ কাউন্ট।
+  statement_rev += words[i];
+  if (i !== 0) {
+    statement_rev += " ";
+  }
 }
 console.log(statement_rev);
+
+//2
+
+const word = statement.split(" "); // শব্দভিত্তিক ভাগ করবে
+const reverseWord = word.reverse(); // শব্দের ক্রম উল্টাবে
+const statementReverse = reverseWord.join(" "); // আবার একত্র করবে
+console.log(statementReverse);
 // **Output:**
 
 // `'person working hard a am I'`
